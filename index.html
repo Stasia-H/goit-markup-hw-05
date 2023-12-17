@@ -545,13 +545,13 @@
         </div>
         <div class="call-back-field-wrapper">
         <label class="call-back-form-field" for="user-comment">Comment</label>
-        <textarea
+        <textarea class="comment-field"
         name="user-comment"
         id="user-comment"
         placeholder="Text input"></textarea>
         </div>
         <div class="call-back-form-checkbox-wrapper">
-          <input 
+          <input class="call-back-form-checkbox-input visually-hidden"
           type="checkbox"
           name="user-privacy-policy"
           id="user-privacy-policy"
@@ -559,6 +559,12 @@
           required
           />
           <label class="call-back-checkbox-label" for="user-privacy-policy">
+            <span class="call-back-checkbox-custom">
+              <svg class="icon-svg-checkbox" width="16"
+              height="16">
+            <use href="./images/icons.svg#icon-Checkbox"></use>
+          </svg>
+            </span>
             I accept the terms and conditions of the <a class="privacy-policy-text" href="">Privacy Policy</a>
           </label>
         </div>
