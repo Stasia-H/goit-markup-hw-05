@@ -741,22 +741,25 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn-icon {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal-close-btn:hover,
-.modal-close-btn:focus, {
+.modal-close-btn:focus {
     background-color: #404bbf;
     border: none;
 }
 
-..modal-close-btn-icon:hover,
+/*.modal-close-btn-icon:hover,
 .modal-close-btn-icon:focus {
     fill: #ffffff;
     
+}*/
+
+.modal-close-btn:hover > .modal-close-btn-icon {
+    fill: #ffffff;
 }
 
+.modal-close-btn:focus > .modal-close-btn-icon {
+    fill: #ffffff;
+}
 
 .modal-window-description {
    width: 360px;
